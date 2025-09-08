@@ -14,7 +14,7 @@ Issue-Fixer is a Python tool that:
 ## Features
 
 - Automated GitHub issue parsing
-- Intelligent code analysis using Claude AI
+- Intelligent code analysis using Claude
 - Automatic code modification and fixes
 - Git branch management and commit creation
 - Support for multiple Claude models (Haiku, Sonnet)
@@ -22,15 +22,16 @@ Issue-Fixer is a Python tool that:
 ## Requirements
 
 - Python 3.13+
+- [uv](https://github.com/astral-sh/uv) (for package management)
 - GitHub access token with repo permissions
 - Anthropic API key
 
 ## Installation
 
 1. Clone this repository
-2. Install dependencies:
+2. Install dependencies using uv:
 ```
-pip install -r requirements.txt
+uv sync --frozen
 ```
 
 ## Configuration
@@ -43,7 +44,7 @@ ANTHROPIC_API_KEY=your_api_key
 ## Usage
 1. Run the main script to process all open issues:
 ```
-python main.py
+uv run main.py
 ```
 
 2. Review fixes and merge if satisfactory
