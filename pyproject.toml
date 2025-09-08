@@ -1,7 +1,7 @@
 [project]
 name = "issue-fixer"
 version = "0.1.0"
-description = "Add your description here"
+description = "Automated GitHub issue resolver that uses MCP tools to analyze and fix issues in repositories"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
